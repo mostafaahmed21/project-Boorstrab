@@ -1,0 +1,325 @@
+body {
+    background-color:rgb(224, 223, 223) !important;
+}
+a {
+    text-decoration: none;
+}
+.navb {
+    position: absolute;
+    z-index: 90;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+.london {
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100% ) !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+} 
+.rr:hover{
+    opacity: 0.7;
+}
+.container-header {
+    width: 40%;
+}
+.form-control {
+    width: 90%;
+}
+.carousel-item {
+    height: 100vh !important;
+}
+.carousel-caption {
+    background-color: rgba(33, 33, 33, 0.7);
+    padding: 50px;
+}
+.carousel-item img{
+    height: 100vh;
+}
+.carousel-caption {
+    bottom:4.25rem;
+}
+.icon {
+    top: 100px;
+    right: 40px;
+    width: 50px;
+    font-size: 50px;
+    position: fixed;
+    z-index: 10;
+}
+.login {
+    margin-right: 270px;
+}
+.title {
+    background-color: aliceblue !important;
+}
+.h2-title1 {
+    padding-top: 88px;
+}
+.cc {
+    height: 220px;
+}
+.text2 {
+    margin-left: -40px;
+}
+.translate {
+    height: 75px;
+}
+.parent-2 {
+    height: 350px;
+}
+.form-floating {   
+    margin-top: -25px;
+}
+.page3 {
+    width: 100%;
+    height: 55vh;
+    background-image: url(../images/elloover.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.div1 {
+    box-shadow: 1px 1px 7px 1px gray !important;
+}
+.div1:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height:0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition:0.6s;
+    border-radius: 5px;
+}
+.div1:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.div1::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height:0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0;
+    transition:0.6s;
+    border-radius: 5px;
+}
+.div1:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.page4 {
+    margin-top: -80px;
+    background-image: url(../images/backgrauond.jpg);
+}
+/* ////////////////////////////////////////////////////////////////// */
+.overlay:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+.overlay {
+    position: relative;
+}
+.img1 img {
+    border-radius: 20px;
+}
+.img1 {
+    transition: 0.4s;
+}
+.title-img1 {
+    top: 30px;
+    cursor: pointer;
+}
+.title-img1 .span {
+    margin-left: -50px;
+}
+.photo-1 {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-image: url(../images/full.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 170px;
+    box-shadow: 0px 0px 1px 3px gray ;
+}
+.photo-2 {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-image: url(../images//eng.mohamed.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 170px;
+    box-shadow: 0px 0px 1px 3px gray ;
+}
+.photo-3 {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-image: url(../images/nada.jpg);
+    background-size: cover;
+    background-position: center;    
+    margin-top: 170px;
+    box-shadow: 0px 0px 1px 3px gray ;
+}
+.p-last {
+    margin-top: -10px;
+}
+.img1:hover {
+    transform: scale(0.9);
+}
+.title-img1 {
+    transition: 0.5s;
+}
+.img1:hover .title-img1 {
+    margin-top: 20px;
+}
+.photo {
+    height: 470px;
+}
+/* ///////////////////////////////////////////////////////////////// */
+.span {
+    margin-left: -53px;
+}
+.line {
+    width: 50px;
+    height: 3px;
+    transition: 0.5s;
+}
+.span {
+    margin-left: -27px;
+}
+.line {
+    width: 60px;
+    height: 3px;
+    border-radius: 3px;
+}
+.bb {
+    border-radius: 2px;
+}
+.box-shadow {
+    background-color: rgba(134, 165, 134, 0.3);
+    box-shadow: 0px 0px 25px 3px rgb(37, 123, 157);
+    transition: 0.5s;
+}
+.box-shadow:hover .line {
+    width: 85px;
+    transition: 0.5s;
+}
+.box-shadow .btn1:hover  {
+    background-color: rgb(120, 120, 120) !important;
+}
+.box-shadow .btn2:hover {
+    background-color: rgb(224, 82, 82) !important;
+}
+.box-shadow .btn-div:hover{
+    background-color: rgb(62, 93, 228) !important;
+}
+.box-shadow .btn-div3:hover{
+    background-color: rgb(230, 204, 118) !important;
+}
+.p1 {
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 7% 100%);
+    border-radius: 7px;
+}
+.cvcv2 {
+    transition: 0.4s;
+}
+.box-shadow:hover .cvcv2 {
+    transform: scale(1.1);
+}
+.p2 {
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0%, 93% 100%, 0% 100%);
+    border-radius: 7px;
+}
+/* ////////////////////////////////////////////////////// */
+.div-1 {
+    border-radius: 7px;
+    box-shadow: 0px 0px 25px 1px rgb(37, 123, 157);
+}
+.icon1 {
+    font-size: 70px;
+    margin: 10px  90px;
+}
+.div-1 a {
+    color: black;
+    text-align: center;
+}
+.h2-icon1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* ////////////////////////////////////////////////// */
+.we {
+    background-color: rgb(203, 203, 203) !important;
+}
+.container-last {
+    width: 100%;
+    margin: auto;
+}
+.line-1 {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+.page1-last {
+    text-align: center;
+}
+.im-1 {
+    border-radius: 50%;
+}
+.line-big {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: auto;
+}
+.page1-last a p:hover {
+    color: black !important;
+}
+@media (max-width: 576px) {
+    .cvcv1 {
+        order: 2;
+    }
+    .cvcv2 {
+        order: 1;
+        background-image: url(../images/eye.jpg);
+        background-size: cover;
+    }
+    .p1 {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+    .p2 {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+}
+@media (max-width: 992px) {
+    .cvcv1 {
+        order: 2;
+    }
+    .cvcv2 {
+        order: 1;
+        background-image: url(../images/eye.jpg);
+        background-size: cover; 
+    }
+    .p1 {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+    .p2 {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+}

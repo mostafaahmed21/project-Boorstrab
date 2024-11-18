@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>project Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+  </head>
+  <body>
+
+
+
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navb w-100 bg-light">
+        
+        <div class="container-fluid">
+          <img src="images/first.jpg" alt="" width="50" height="50" class="rounded-circle mx-3">
+          <a class="navbar-brand border-end border-black px-2 london" href="#">London</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle border border-primary rounded-1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Trips
+                </a>
+                
+                <ul class="dropdown-menu opacity-75" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-uppercase text-primary" href="#">Paris</a></li>
+                  <li><a class="dropdown-item text-uppercase text-primary" href="#">Nantes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-uppercase text-primary" href="#">marseille </a></li>
+                  <li><a class="dropdown-item text-uppercase text-primary" href="#">strasbourg </a></li>
+                  <li><a class="dropdown-item text-uppercase text-primary" href="#">rouen </a></li>
+                  <li><a class="dropdown-item text-uppercase text-primary" href="#">toulouse </a></li>
+                  <li><a class="dropdown-item text-uppercase text-primary" href="#">More . . . </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </li>
+            </ul>
+            
+            <form class="d-flex">
+              <input class="form-control me-2 border-primary" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn text-light bg-primary rr" type="submit">Search</button>
+              <button type="button" class="btn text-light bg-primary mx-1 rr" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <div>
+          <span class="text-light  mx-4 fs-4" >Login</span>
+        </div>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label border-2 mx-4">Email address</label>
+          <input type="email" class="form-control mx-4" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text mx-4">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label mx-4">Password</label>
+          <input type="password" class="form-control mx-4" id="exampleInputPassword1">
+        </div>
+        
+        <div class="form-check form-switch">
+          <input class="form-check-input mx-1" type="checkbox" id="flexSwitchCheckChecked " checked>
+          <label class="form-check-label" for="flexSwitchCheckChecked">Remember Me</label>
+        </div>
+      </div>
+      
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary login">Login</button>
+        <button type="button" class="btn btn-secondary mx-4" data-bs-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /////////////////////////////////////////////// -->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators p-3">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active ">
+            <img src="images/backgruond3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block rounded-4">
+              <h5>NANTES</h5>
+              <p class="text-capitalize">Thank You nantes</p>
+              <button class="btn btn-primary">Visit Us</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/bckgruond2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block rounded-4">
+              <h5>PARIS</h5>
+              <p class="text-capitalize">we love this city</p>
+              <button class="btn btn-primary">Visit Us</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/backgruond3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block rounded-4">
+              <h5>NICE</h5>
+              <p>Thank You Nice</p>
+              <button class="btn btn-primary">Visit Us</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/backgrauond.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block rounded-4">
+              <h5>BOARD</h5>
+              <p>Beautiful city</p>
+              <button class="btn btn-primary">shop now</button>
+            </div>
+          </div>
+
+
+
+
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <i class="fa-solid fa-angles-left fs-4 text-primary"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <i class="fa-solid fa-angles-right fs-4 text-primary"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+            <div class="row col-sm-12 icon">
+                <a href="#"><i class="fa-brands fa-facebook m-1"></i></a>
+                <a href="#"><i class="fa-brands fa-square-whatsapp m-1"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter m-1"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin m-1"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram m-1"></i></a>
+            </div>
+
+
+        
+    </div>
+
+    <div class="title bg-secondary col-12 border-3 mb-3 pt-3">
+        <h2 class="text-black text-capitalize mx-4 text-center london">welcome to paris</h2>
+        <p class="text-black-50 mx-4 text-capitalize">The city of light, the capital of fashion and beauty, and also the city of love. These are all titles given to Paris, one of the most important cultural and economic capitals in the world, whose ancient history and unique arts have influenced the entire world.</p>
+        <button class="btn btn-primary text-light mx-4 mb-3">Learn more</button>
+    </div>
+
+    <hr>
+    <div class="cc bg-light ">
+        
+        
+        <div class=" rounded-2 ">
+            <h2 class=" h2-title1 text-center text-capitalize ">Popular destinations in paris</h2>
+        </div>
+    </div>
+
+
+
+
+    <div class="accordion accordion-flush mt-3" id="accordionFlushExample">
+            <div class="accordion-item border-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-light text-uppercase fs-5 london" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  paris city
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body ">Paris, the capital of beauty and the destination of those with good taste, the city of light, the capital of fashion and beauty, and also the city of love.</div>
+              </div>
+            </div>
+            <div class="accordion-item border-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-body-secondary text-uppercase fs-5 london" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  rouen city
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">This massive building is a favorite building for many visitors in the city, but there are also many beautiful museums to explore, not to mention the Gros Horloge clock tower, France's oldest inn La Couronne and the beautiful modern church dedicated to Joan of Arc.</div>
+              </div>
+            </div>
+            <div class="accordion-item border-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-body-secondary text-uppercase fs-5 london" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  nantes city
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">The French city of Nantes is located in the western part of France. It overlooks the Loire River from its western side. It also occupies an area extending from the beginning of the river’s mouth to the end of its mouth in the Atlantic Ocean. The city’s lands are interspersed with two tributaries of the river: the Ardre and the Nantes Sèvres. The city of Nantes is still 342 km² to the southwest from the French capital, Paris, and the city of Bordeaux is 340 km to the north. The city of Nantes is considered the administrative director of the Loire-Atlantique region.</div>
+              </div>
+            </div>
+    </div>
+<!-- ///////////////////////////////////////////////////////// -->
+    <hr>
+<!-- ///////////////////////////////////////////////////////// -->
+<div class="parent-2 w-100 ">
+      <div class="bg-light rounded-4 translate bg-secondary">
+          <h2 class="h2-3 text-capitalize text-center pt-3">translate from arabic to english</h2>
+      </div>
+      <br>
+      <span class="text1 fs-4 mx-5">write and translate</span> 
+      <span class="text-success text2 fs-4"> Press Here</span>
+      <br>
+
+
+
+
+  <button type="button" class="btn btn-primary mx-5 mt-3 mb-5 " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Copy
+  </button>
+
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">moatafa ahmed</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            تم نسخ النص
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="form-floating mx-5">
+          <textarea class="form-control bg-body-secondary" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">translate:</label>
+      </div>
+</div>
+<!-- /////////////////////////////////////////////////////// -->
+    <hr>
+<!-- /////////////////////////////////////////////////////// -->
+<div class="parent-2 w-100 ">
+      <div class="bg-light rounded-4 translate bg-secondary">
+          <h2 class="h2-3 text-capitalize text-center pt-3">translate from arabic to frensh</h2>
+      </div>
+      <br>
+      <span class="text1 fs-4 mx-5">write and translate</span> 
+      <span class="text-success text2 fs-4"> Press Here</span>
+      <br>
+  <button type="button" class="btn btn-primary mx-5 mt-3 mb-5 " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Copy
+  </button>
+    
+      <div class="form-floating mx-5">
+          <textarea class="form-control bg-body-secondary" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">translate:</label>
+      </div>
+</div>
+  <!-- /////////////////////////////////////////////////////////////////////////// -->
+    <hr>
+  <!-- ///////////////////////////////////////////////////////////////////////////// -->
+<div class="parent-2 w-100 ">
+      <div class="bg-light rounded-4 translate bg-secondary">
+          <h2 class="h2-3 text-capitalize text-center pt-3">translate from arabic to german</h2>
+      </div>
+      <br>
+      <span class="text1 fs-4 mx-5">write and translate</span> 
+      <span class="text-success text2 fs-4"> Press Here</span>
+      <br>
+    <button type="button" class="btn btn-primary mx-5 mt-3 mb-5 " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Copy
+    </button>
+  
+      <div class="form-floating mx-5">
+          <textarea class="form-control bg-body-secondary" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">translate:</label>
+      </div>
+</div>
+
+<!-- /////////////////////////////////////////////////////////////// -->
+    <hr>
+    <div class="page3"> 
+    </div>
+    <div>
+        <div class="bg-light translate rounded-3">
+            <h2 class="h2-3 text-uppercase text-center pt-3 london">popular destinations in paris</h2>
+        </div>
+    </div>
+
+
+    
+<div class="container mx-auto row mt-5 mb-5 justify-content-between">
+              <div class="div1 col-12 col-md-4 col-lg-3 mb-5 bg-light mx-2 rounded-1 position-relative">
+                  <a href="#"> <img src="images/paris.jpg" alt="" width="100%" height="350" class="rounded-1"></a>
+                  <div class="nn d-flex justify-content-between">
+                      <span class=" mt-1 text-uppercase">paris</span>
+                      <button class="btn btn-primary mt-2 text-capitalize">learn more</button>
+                  </div>
+                  <p class=" text-capitalize">capital of london </p>
+              </div>
+            <div class="div1 col-12 col-md-4 col-lg-3 mb-5 bg-light mx-2 rounded-1 position-relative">
+                <a href="#"> <img src="images/backgruond3.jpg" alt="" width="100%" height="350 class="rounded-1""></a>
+                <div class="nn d-flex justify-content-between">
+                    <span class=" mt-1 text-uppercase">nantes</span>
+                    <button class="btn btn-primary mt-2 text-capitalize">learn more</button>
+                </div>
+                <p class=" text-capitalize"> beautiful french country</p>
+            </div>
+            <div class="div1 col-12 col-md-4 col-lg-3 mb-5 bg-light mx-2 rounded-1 position-relative">
+                <a href="#"> <img src="images/disne.jpg" alt="" width="100%" height="350" class="rounded-1"></a>
+                <div class="nn d-flex justify-content-between">
+                    <span class=" mt-1 text-uppercase">disney</span>
+                    <button class="btn btn-primary mt-2 text-capitalize">learn more</button>
+                </div>
+                <p class=" text-capitalize">the most upscale in paris  </p>
+            </div>
+            <div class="div1 col-12 col-md-4 col-lg-3 mb-5 bg-light mx-2 rounded-1 position-relative">
+              <a href="#"> <img src="images/elloover.jpg" alt="" width="100%" height="350" class="rounded-1"></a>
+              <div class="nn d-flex justify-content-between">
+                  <span class=" mt-1 text-uppercase">louver </span>
+                  <button class="btn btn-primary mt-2 text-capitalize">learn more</button>
+              </div>
+              <p class="text-capitalize">The largest museum in the world</p>
+          </div>
+          <div class="div1 col-12 col-md-4 col-lg-3 mb-5 bg-light mx-2 rounded-1 position-relative">
+              <a href="#"> <img src="images/leion.jpg" alt="" width="100%" height="350" class="rounded-1"></a>
+              <div class="nn d-flex justify-content-between">
+                  <span class=" mt-1 text-uppercase">Lyon</span>
+                  <button class="btn btn-primary mt-2 text-capitalize">learn more</button>
+              </div>
+              <p class=" text-capitalize"> Close to the estuary river</p>
+          </div>
+        <div class="div1 col-12 col-md-4 col-lg-3 mb-5 bg-light mx-2 rounded-1 position-relative">
+            <a href="#"> <img src="images/loc.jpg" alt="" width="100%" height="350" class="rounded-1"></a>
+            <div class="nn d-flex justify-content-between">
+                <span class=" mt-1 text-uppercase">Luxembourg</span>
+                <button class="btn btn-primary mt-2 text-capitalize">learn more</button>
+            </div>
+            <p class=" text-capitalize">One of the Blonx countries </p>
+        </div>
+
+
+        <div class="div1 col-12 col-md-4 col-lg-3 mb-5 bg-light mx-2 rounded-1 position-relative ">
+          <a href="#"> <img src="images/n2.jpg" alt="" width="100%" height="350" class="rounded-1"></a>
+          <div class="nn d-flex justify-content-between">
+              <span class=" mt-1 text-uppercase">Nice</span>
+              <button class="btn btn-primary mt-2 text-capitalize">learn more</button>
+          </div>
+          <p class=" text-capitalize">Located near the French Riviera</p>
+      </div>
+      <div class="div1 col-12 col-md-4 col-lg-3 mb-5 bg-light mx-2 rounded-1 position-relative">
+          <a href="#"> <img src="images/marsilia.jpg" alt="" width="100%" height="350" class="rounded-1"></a>
+          <div class="nn d-flex justify-content-between">
+              <span class=" mt-1 text-uppercase">Marseille</span>
+              <button class="btn btn-primary mt-2 text-capitalize">learn more</button>
+          </div>
+          <p class=" text-capitalize">France's largest commercial ports </p>
+      </div>
+
+<!-- ////////////////////////////////////////////////////////////////////////////// -->
+</div>
+
+        <div class="pt-5">
+          <div class="page3 page4 "> 
+          </div>
+        </div>
+
+          <hr>
+
+          <div class="bg-light translate rounded-2">
+              <h2 class="h2-3 text-center pt-3 text-uppercase london">thanks for</h2>
+          </div>
+
+          <div class="container row mt-5 mx-auto">
+            <div class="img1 col col-lg-4 col-md-4 col-12 mb-4 position-relative">
+              <div class="overlay">
+                <img src="images/eng.jpg" alt="" width="100%" class="photo ">
+              </div>  
+              <div class="title-img1 text-light position-absolute">
+                <h4 class="mx-5">All thanks appreciation</h4>
+                <i class="fa-regular fa-clock mx-5"></i>
+                <span class="span">Novamber 1, 2024</span>
+                <div class="photo-1 mx-5"></div>
+                <p class="mx-5">Eng. Mostafa ahmed</p>
+                <p class="mx-5 p-last">Director Full Stack</p>
+              </div>
+            </div>
+
+            <div class="img1 col col-lg-4 col-md-4 col-12 mb-4 position-relative">
+              <div class="overlay">
+                <img src="images/eng.mohamed.jpg" alt="" width="100%" class="photo ">
+              </div>  
+              <div class="title-img1 text-light position-absolute">
+                <h4 class="mx-5">All thanks appreciation</h4>
+                <i class="fa-regular fa-clock mx-5"></i>
+                <span class="span">Novamber 1, 2024</span>
+                <div class="photo-2 mx-5"></div>
+                <p class="mx-5">Eng. Mohamed ahmed</p>
+                <p class="mx-5 p-last">Director UI/UX</p>
+              </div>
+            </div>
+
+            <div class="img1 col col-lg-4 col-md-4 col-12 mb-4 position-relative">
+              <div class="overlay ">
+                <img src="images/nada.jpg" alt="" width="100%" class="photo ">
+              </div>  
+              <div class="title-img1 text-light position-absolute">
+                <h4 class="mx-5">All thanks appreciation</h4>
+                <i class="fa-regular fa-clock mx-5"></i>
+                <span class="span">Novamber 1, 2024</span>
+                <div class="photo-3 mx-5"></div>
+                <p class="mx-5">Eng. Nada amer</p>
+                <p class="mx-5 p-last">Director Full Stack</p>
+              </div>
+            </div>
+
+            
+          </div>
+          <hr>
+          <h2 class="news text-danger text-center london ">EGYPT NEWS</h2>
+
+          <div class="container mt-5">
+            <div class="card mb-3 box-shadow">
+              <div class="row g-0">
+                
+                <div class="col-lg-8 col-12 cvcv1">
+                  <div class="card-body">
+                      <h2 class="card-title mx-4 mt-3 text-success">Podcast Title</h2>
+                      <i class="fa-solid fa-calendar-days mx-4"></i>
+                      <span class="span">Mon, Nov 4th 2024 </span>
+                      <div class="line bg-danger mx-4"></div>
+                      <p class="card-text mx-4 mt-3 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sapiente, quibusdam totam molestiae unde autem dolorum, voluptates, temporibus et repudiandae exercitationem. Architecto quod nihil cum laborum maxime eaque necessitatibus provident fugit minus consequuntur. Facilis iusto voluptatibus quod placeat veritatis delectus, ea impedit aliquam nobis! Porro.</p>
+                      <div class="mx-4">
+                      <button class="bg-info border-0 px-2 bb mt-4 bg-dark-subtle  btn1"> <i class="fa-solid fa-tag"></i>Podcast</button>
+                      <button class="bg-info border-0 px-2 bb bg-dark-subtle btn1"> <i class="fa-solid fa-clock"></i>55 min.</button>
+                      <button class="bg-info border-0 px-2 bb bg-dark-subtle btn2"> <i class="fa-solid fa-play"></i>Play Episode</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p1 col-lg-4 col-12 ">
+                    <div class=" cvcv2">
+                      <img src="images/eye.jpg" class="  card-img" alt="...">
+                    </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+            <div class="card mb-3 box-shadow mt-5">
+              <div class="row g-0">
+
+                <div class="p2 col-lg-4 col-12 ">
+                  <div class=" cvcv2">
+                    <img src="images/eye.jpg" class="  card-img" alt="...">
+                  </div>
+              </div>
+                
+                <div class="col-lg-8 col-12 cvcv1">
+                  <div class="card-body">
+                    <h2 class="card-title mx-4 mt-3 text-success">Podcast Title</h2>
+
+                    <i class="fa-solid fa-calendar-days mx-4"></i>
+                    <span class="span">Mon, Nov 4th 2024 </span>
+                    <div class="line bg-primary mx-4"></div>
+                    <p class="card-text mx-4 mt-3 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sapiente, quibusdam totam molestiae unde autem dolorum, voluptates, temporibus et repudiandae exercitationem. Architecto quod nihil cum laborum maxime eaque necessitatibus provident fugit minus consequuntur. Facilis iusto voluptatibus quod placeat veritatis delectus, ea impedit aliquam nobis! Porro.</p>
+                    <div class="mx-4">
+                      <button class="bg-info border-0 px-2 bb mt-4 bg-dark-subtle  btn1"> <i class="fa-solid fa-tag"></i>Podcast</button>
+                      <button class="bg-info border-0 px-2 bb bg-dark-subtle btn1"> <i class="fa-solid fa-clock"></i>55 min.</button>
+                      <button class="bg-info border-0 px-2 bb bg-dark-subtle btn-div"> <i class="fa-solid fa-play"></i>Play Episode</button>
+                    </div>
+                  </div>
+                </div>
+
+                    
+              </div>
+            </div>
+
+
+            <div class="card mb-3 box-shadow mt-5">
+              <div class="row g-0">
+                
+                <div class="col-lg-8 col-12 cvcv1">
+                  <div class="card-body">
+                    <h2 class="card-title mx-4 mt-3 text-success">Podcast Title</h2>
+
+                    <i class="fa-solid fa-calendar-days mx-4"></i>
+                    <span class="span">Mon, Nov 4th 2024 </span>
+                    <div class="line bg-warning mx-4"></div>
+                    <p class="card-text mx-4 mt-3 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sapiente, quibusdam totam molestiae unde autem dolorum, voluptates, temporibus et repudiandae exercitationem. Architecto quod nihil cum laborum maxime eaque necessitatibus provident fugit minus consequuntur. Facilis iusto voluptatibus quod placeat veritatis delectus, ea impedit aliquam nobis! Porro.</p>
+                    <div class="mx-4">
+                      <button class="bg-info border-0 px-2 bb mt-4 bg-dark-subtle  btn1"> <i class="fa-solid fa-tag"></i>Podcast</button>
+                      <button class="bg-info border-0 px-2 bb bg-dark-subtle btn1"> <i class="fa-solid fa-clock"></i>55 min.</button>
+                      <button class="bg-info border-0 px-2 bb bg-dark-subtle btn-div3"> <i class="fa-solid fa-play"></i>Play Episode</button>
+                    </div>
+                  </div>
+                </div>
+
+                    <div class="p1 col-lg-4 col-12 ">
+                        <div class=" cvcv2">
+                          <img src="images/eye.jpg" class="  card-img" alt="...">
+                        </div>
+                    </div>
+              </div>
+            </div>
+
+
+            <div class="card mb-3 box-shadow mt-5">
+              <div class="row g-0">
+
+                <div class="p2 col-lg-4 col-12 ">
+                  <div class=" cvcv2">
+                    <img src="images/eye.jpg" class="  card-img" alt="...">
+                  </div>
+              </div>
+                
+                <div class="col-lg-8 col-12 cvcv1">
+                  <div class="card-body">
+                    <h2 class="card-title mx-4 mt-3 text-success">Podcast Title</h2>
+                    <i class="fa-solid fa-calendar-days mx-4"></i>
+                    <span class="span">Mon, Nov 4th 2024 </span>
+                    <div class="line bg-warning mx-4"></div>
+                    <p class="card-text mx-4 mt-3 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sapiente, quibusdam totam molestiae unde autem dolorum, voluptates, temporibus et repudiandae exercitationem. Architecto quod nihil cum laborum maxime eaque necessitatibus provident fugit minus consequuntur. Facilis iusto voluptatibus quod placeat veritatis delectus, ea impedit aliquam nobis! Porro.</p>
+                    <div class="mx-4">
+                      <button class="bg-info border-0 px-2 bb mt-4 bg-dark-subtle  btn1"> <i class="fa-solid fa-tag"></i>Podcast</button>
+                      <button class="bg-info border-0 px-2 bb bg-dark-subtle btn1"> <i class="fa-solid fa-clock"></i>55 min.</button>
+                      <button class="bg-info border-0 px-2 bb bg-dark-subtle btn-div3"> <i class="fa-solid fa-play"></i>Play Episode</button>
+                    </div>
+                  </div>
+                </div>
+   
+              </div>
+            </div>
+
+          </div>
+<!-- /////////////////////////////// -->
+          <h2 class="mt-5 mb-5 text-black text-center london">Join us</h2>          
+<!-- ///////////////////////////////////////////// -->
+    <div class="container-last-parent mx-auto">
+
+      <div class="container  con-last ">
+        <div class="row ">
+          
+            <div class="col  h-100 cc c1 col-12 col-md-6 col-lg-3 ">
+              <div class="div-1 bg-light  m-auto mb-3 row">
+                <h2 class=" mt-4 h2-icon1 text-info">Subscribe Now</h2>
+                <a href="#"><i class="fa-brands fa-square-twitter icon1 "></i></a>   
+                <a href="#" class="text-decoration-none text-info"><h2 class=" mt-2  fs-3">Go to link</h2></a> 
+                </div>
+            </div>
+            <div class="col  h-100 cc c1 col-12 col-md-6 col-lg-3 ">
+              <div class="div-1 bg-light  m-auto mb-3 row">
+                <h2 class=" mt-4 h2-icon1 text-info">Follow</h2>
+                <a href="#"><i class="fa-brands fa-square-whatsapp icon1"></i></a>
+                <a href="#" class="text-decoration-none text-info"><h2 class=" mt-2 fs-3">Go to link</h2></a>
+                </div>
+            </div>
+            <div class="col  h-100 cc c1 col-12 col-md-6 col-lg-3 ">
+              <div class="div-1 bg-light  m-auto mb-3 row">
+                <h2 class=" mt-4 h2-icon1 text-info">Like The Page</h2>
+                <a href="#"><i class="fa-brands fa-linkedin icon1"></i></a>
+                <a href="#" class="text-decoration-none text-info"><h2 class=" mt-2 fs-3">Go to link</h2></a>
+                </div>
+            </div>
+            <div class="col  h-100 cc c1 col-12 col-md-6 col-lg-3 ">
+              <div class="div-1 bg-light  m-auto mb-3 row">
+              <h2 class=" mt-4 h2-icon1 text-info ">Watch Vedios</h2>
+              <a href="#"><i class="fa-brands fa-square-instagram icon1"></i></a>
+              <a href="#" class="text-decoration-none text-info "><h2 class=" mt-2 fs-3">Go to link</h2></a>
+              </div>
+            </div>  
+            
+          </div>
+        
+      </div>
+
+      <div class="we bg-secondary pb-3">
+        <div class="container-last row ">
+          <div class="page1-last pt-3 mx-auto col-12 col-md-12 col-lg-4">
+            <div class="line-1"></div>
+            <img src="images/first.jpg" alt="" width="100" height="100" class="im-1 mt-3 mb-3">
+            <span class="text-black fs-5">Good Company</span>
+            <div class="line-1"></div>
+            <p class="mt-3 text-black">Tel : 000-000-000</p>
+            <p class="text-black">Adress : London</p>
+            <p class="mb-3 text-black">Fax : 000-000-000</p>
+          </div>
+          <div class="page1-last pt-3 mx-auto  col-12 col-md-12 col-lg-4">
+            <div class="line-1"></div>
+            <img src="images/first.jpg" alt="" width="100" height="100" class="im-1 mt-3 mb-3">
+            <span class="text-black fs-5">Important links</span>
+            <div class="line-1"></div>
+            <a href="#"><p class="mt-3 text-primary">Visit Us</p></a>
+            <a href="#"><p class="text-primary">Take alook</p></a>
+            <a href="#"><p class="mb-3 text-primary">Your health is more important</p></a>
+          </div>
+          <div class="page1-last pt-3 mx-auto col-12 col-md-12 col-lg-4">
+            <div class="line-1"></div>
+            <img src="images/first.jpg" alt="" width="100" height="100" class="im-1 mt-3 mb-3">
+            <span class="text-black fs-5">Vision</span>
+            <div class="line-1"></div>
+            <p class="mt-3 text-black">serveices for all </p>
+            <p class="text-black">Proviode best serveices</p>
+            <p class="mb-4 text-black">you will be better then before</p>
+          </div>
+        </div>
+  
+        <div class="line-big"></div>
+      
+        
+                 
+                    <div class="Copy">
+                      <p class="mt-3 mb-3 text-center fs-4 london text-uppercase ">COPYRIGHT ©2024 Mostafa Ahmed. ALL RIGHTS</p>
+                    </div>
+        <div class="line-big "></div>            
+                
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
+<script src="script.js"></script>
+
+
+
+
+  </body>
+</html>
